@@ -31,9 +31,6 @@ aside {
 .navbar{
     color: black;
     text-align: center;
-    /* background-color: darkred; */
-    
-
 }
 
 .navbar h2 {
@@ -43,7 +40,6 @@ aside {
     font-family: 'Tapestry', cursive;
     text-decoration: underline;
     margin-bottom: 5%;
-    /* background-color: darkred; */
 }
 
 .navbar ul {
@@ -53,7 +49,6 @@ aside {
     justify-content: space-around;
     height: 55%;
     width: 5rem;
-    /* background-color: darkred; */
     
 }
 
@@ -62,7 +57,17 @@ aside {
     text-decoration: none;
     color: black;
     font: 3rem impact;
-    /* background-color: darkred; */
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    justify-self: unset;
+    margin: 2em;
+    height: 33rem;
+    width: 83rem;
+    background-color: blueviolet;
 }
 
 section {
