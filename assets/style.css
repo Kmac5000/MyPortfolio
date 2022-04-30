@@ -3,12 +3,20 @@
     background-color: grey;
 }
 
+
+
 header {
+    display: flex 2 4 5em;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 10rem;
     height: 20rem;
     width: 100%;
     background-color: darkred;
-    
-
+    font-family: 'Tapestry',
+    cursive;
 }
 
 aside {
@@ -22,40 +30,54 @@ aside {
 .navbar{
     color: black;
     text-align: center;
-    background-color: darkred;
+    /* background-color: darkred; */
     
 
 }
 
 .navbar h2 {
+    position: relative;
     font-size: 5rem;
-    font-weight: bolder;
-    font-family: 'Oleo Script','Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+    font-family: 'Tapestry', cursive;
     text-decoration: underline;
     margin-bottom: 5%;
-    background-color: darkred;
+    /* background-color: darkred; */
 }
 
 .navbar ul {
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 55%;
     width: 5rem;
-    background-color: darkred;
+    /* background-color: darkred; */
     
 }
 
 .navbar a {
+    position: relative;
     text-decoration: none;
     color: black;
     font: 3rem impact;
-    background-color: darkred;
+    /* background-color: darkred; */
 }
+
+section {
+    display: flex;
+    height: 10rem;
+    width: 10rem;
+    background-color: aqua;
+}
+
+
 
 footer {
     height: 10rem;
     width: 100%;
     background-color: darkred;
 }
+
+
 
