@@ -22,6 +22,7 @@ header {
 aside {
     display: flex;
     justify-content: center;
+    float: left;
     height: 75rem;
     width: 30rem;
     background-color: darkred;
@@ -66,17 +67,26 @@ aside {
 
 section {
     display: flex;
-    height: 10rem;
-    width: 10rem;
+    flex-wrap: wrap;
+    float: right;
+    justify-content: space-around;
+    margin: 2em;
+    height: 33rem;
+    width: 25rem;
     background-color: aqua;
+    
 }
 
 
 
 footer {
+    display: flex;
+    position: relative;
+    bottom: 0;
     height: 10rem;
     width: 100%;
     background-color: darkred;
+    
 }
 
 
