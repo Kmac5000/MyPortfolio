@@ -21,7 +21,6 @@ header h1{
 
 aside {
     display: flex 2 4 5em;
-    justify-content: center;
     height: 75rem;
     width: 25rem;
     background-color: darkred;
@@ -29,17 +28,11 @@ aside {
 }
 
 
-/* aside .navbar {
-    display: flex;
-    position: absolute;
-    /* justify-content: center; */
-    /* float: left;
-    height: 75rem;
-    width: 30rem;
-    background-color: darkred; */
-    /* color: black;
-    text-align: center; */
-   
+aside .navbar {
+    justify-content: center;
+    text-align: center;
+    background-color: darkred;
+}
 
 
 aside .navbar h2 {
@@ -54,37 +47,58 @@ aside .navbar h2 {
 
 
 aside .navbar a {
-    /* position: relative; */
-    /* float: left; */
-    /* flex-direction: column; */
-    justify-content: space-between;
+    /* justify-content: space-evenly; */
     text-decoration: none;
     color: black;
     font: 2rem impact;
 }
 
+
+
 div {
     display: flex;
-    flex-wrap: wrap;
     float: right;
-    justify-self: unset;
+    justify-content: center;
     margin: 2em;
     height: 33rem;
     width: 83rem;
     background-color: blueviolet;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-section {
+
+.box_img {
     display: flex;
     flex-wrap: wrap;
     float: right;
-    justify-content: space-around;
-    margin: 2em;
-    height: 33rem;
-    width: 25rem;
+    width: 90%;
+    margin: 0 auto;
     background-color: aqua;
     
 }
+
+.img_box {
+    display: inline;
+    flex-basis: 100%;
+    width: 45rem;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 400px) { 
+    .img_box {
+    flex-basis: 25%;
+}
+
+@media only screen and (min-width: 820px) {
+    .img_box {
+        flex-basis: 50%
+    }
+}
+
+
 
 
 
