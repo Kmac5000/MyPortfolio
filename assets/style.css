@@ -94,5 +94,38 @@ footer {
     
 }
 
+@media only screen and (max-width: 1000px){
+    header {
+        background-color: aliceblue;
+        height: 5rem;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        color: black;
+        font-size: 3rem;
+        width: 100%
+    }
+    .navbar {
+        display: absolute;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div {
+        height: 15rem;
+        width:27rem;
+    }
+
+    section {
+        height: 15rem;  
+        width: 27rem;
+    }
+    
+}
+
 
 
