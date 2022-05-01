@@ -5,7 +5,7 @@
 
 
 
-header {
+header h1{
     display: flex 2 4 5em;
     justify-content: center;
     align-items: center;
@@ -20,43 +20,47 @@ header {
 }
 
 aside {
-    display: flex;
+    display: flex 2 4 5em;
     justify-content: center;
+    height: 75rem;
+    width: 25rem;
+    background-color: darkred;
     float: left;
+}
+
+
+/* aside .navbar {
+    display: flex;
+    position: absolute;
+    /* justify-content: center; */
+    /* float: left;
     height: 75rem;
     width: 30rem;
-    background-color: darkred;
-}
+    background-color: darkred; */
+    /* color: black;
+    text-align: center; */
+   
 
-.navbar{
-    color: black;
-    text-align: center;
-}
 
-.navbar h2 {
-    position: relative;
+aside .navbar h2 {
     font-size: 5rem;
     font-weight: 500;
     font-family: 'Tapestry', cursive;
     text-decoration: underline;
-    margin-bottom: 5%;
+    background-color: darkred;
+    margin-bottom: 2rem;
+
 }
 
-.navbar ul {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 55%;
-    width: 5rem;
-    
-}
 
-.navbar a {
-    position: relative;
+aside .navbar a {
+    /* position: relative; */
+    /* float: left; */
+    /* flex-direction: column; */
+    justify-content: space-between;
     text-decoration: none;
     color: black;
-    font: 3rem impact;
+    font: 2rem impact;
 }
 
 div {
