@@ -6,7 +6,7 @@
 
 
 header h1{
-    display: flex 2 4 5em;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -19,17 +19,31 @@ header h1{
     cursive;
 }
 
+@media only screen and (max-width: 700px) {
+    header h1 {
+        font-size: 4rem;
+        height: 10rem;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
 aside {
-    display: flex 2 4 5em;
+    display: flex 2;
     width: 25rem;
     height: 120rem;
     background-color: darkred;
     float: left;
 }
 
+@media only screen and (max-width: 820px) {
+    aside {
+        height: 25rem;
+    };
+    
+}
 
 aside .navbar {
-    justify-content: center;
     text-align: center;
     background-color: darkred;
 }
@@ -47,7 +61,6 @@ aside .navbar h2 {
 
 
 aside .navbar a {
-    /* justify-content: space-evenly; */
     text-decoration: none;
     color: black;
     font: 2rem impact;
@@ -65,6 +78,26 @@ div {
     background-color: blueviolet;
     padding: 20px;
     box-sizing: border-box;
+}
+
+@media only screen and (max-width: 540px) {
+    div {
+        height: 0rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    div {
+        margin:0%;
+        height: 15rem;
+    }
+    
+}
+
+@media only screen and (max-width: 820px) {
+    div {
+        height: 20rem;
+    }
 }
 
 
@@ -111,7 +144,7 @@ footer h3{
     
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 700px) {
     footer { 
         display: none;
 }
