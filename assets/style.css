@@ -21,8 +21,8 @@ header h1{
 
 aside {
     display: flex 2 4 5em;
-    height: 75rem;
     width: 25rem;
+    height: 120rem;
     background-color: darkred;
     float: left;
 }
@@ -59,9 +59,9 @@ div {
     display: flex;
     float: right;
     justify-content: center;
-    margin: 2em;
-    height: 33rem;
-    width: 83rem;
+    margin: 3em 10em;
+    height: 40rem;
+    width: auto;
     background-color: blueviolet;
     padding: 20px;
     box-sizing: border-box;
@@ -71,9 +71,9 @@ div {
 .box_img {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     float: right;
     width: 90%;
-    margin: 0 auto;
     background-color: aqua;
     
 }
@@ -81,9 +81,8 @@ div {
 .img_box {
     display: inline;
     flex-basis: 100%;
-    width: 45rem;
-    height: auto;
-    padding: 10px;
+    width: 30rem;
+    height: 30rem;
     box-sizing: border-box;
 }
 
@@ -99,12 +98,12 @@ div {
 }
 
 
-
-
-
-footer {
+footer h3{
     display: flex;
     position: relative;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
     bottom: 0;
     height: 10rem;
     width: 100%;
@@ -112,38 +111,11 @@ footer {
     
 }
 
-@media only screen and (max-width: 1000px){
-    header {
-        background-color: aliceblue;
-        height: 5rem;
-        width: 100%;
-    }
-
+@media only screen and (max-width: 400px) {
+    footer { 
+        display: none;
 }
 
-@media screen and (max-width: 576px) {
-    header {
-        color: black;
-        font-size: 3rem;
-        width: 100%
-    }
-    .navbar {
-        display: absolute;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    div {
-        height: 15rem;
-        width:27rem;
-    }
-
-    section {
-        height: 15rem;  
-        width: 27rem;
-    }
-    
-}
 
 
 
