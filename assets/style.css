@@ -5,25 +5,72 @@
 
 :root {
     --bgcolor2: darkred;
+    --fontfam: 'Tapestry',
+    cursive;
+    --fontcol: black;
+    --bordrad: 12%
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    height: 15rem;
+    width: auto;
+    background-color: var(--bgcolor2);
+}
 
 
 header h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    display: flex; 
+    flex-wrap: wrap; 
     text-align: center;
     font-size: 10rem;
-    height: 20rem;
-    width: 100%;
-    background-color: var(--bgcolor2);
-    font-family: 'Tapestry',
-    cursive;
+    background-color: var(--bgcolor2 ); 
+    font-family: var(--fontfam)
 }
 
-@media only screen and (max-width: 700px) {
+header .email {
+    display: flex;
+    height: fit-content;
+    width: 70rem;
+    justify-content: right;
+    text-align: center;
+    font-family: var(--fontfam);
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--fontcol);
+    
+
+
+}
+
+header .face {
+    display: flex;
+    height: 17rem;
+    width: auto;
+    float: right;
+    border-radius: 100%;
+    margin-top: 1rem;
+    margin-right: 9rem;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    header {
+        height: 10rem;
+        width: 100%;
+    }
+
+    .face {
+        float: none;
+    }
+
+
+    
     header h1 {
         font-size: 4rem;
         height: 10rem;
@@ -34,8 +81,9 @@ header h1{
 
 aside {
     display: flex 2;
+    position: absolute;
     width: 25rem;
-    height: 120rem;
+    height: 115rem;
     background-color: var(--bgcolor2);
     float: left;
 }
@@ -48,6 +96,9 @@ aside {
 }
 
 aside .navbar {
+    display: flex;
+    position: relative;
+    flex-direction: column;
     text-align: center;
     background-color: var(--bgcolor2);
 }
@@ -56,7 +107,7 @@ aside .navbar {
 aside .navbar h2 {
     font-size: 5rem;
     font-weight: 500;
-    font-family: 'Tapestry', cursive;
+    font-family: var(--fontfam);
     text-decoration: underline;
     background-color: var(--bgcolor2);
     margin-bottom: 2rem;
@@ -65,15 +116,21 @@ aside .navbar h2 {
 
 
 aside .navbar a {
+    display: flex;
+    position: relative;
+    height: 10rem;
+    width: 25rem;
+    justify-content: center;
     text-decoration: none;
     color: black;
-    font: 2rem impact;
+    font: 4rem var(--fontfam);
 }
 
 
 
-div {
+.dropkick {
     display: flex;
+    position: relative;
     float: right;
     justify-content: center;
     margin: 3em 10em;
@@ -82,6 +139,12 @@ div {
     background-color: blueviolet;
     padding: 20px;
     box-sizing: border-box;
+    border-radius: var(--bordrad);
+
+}
+
+.dropkick img {
+    border-radius: var(--bordrad);
 }
 
 @media only screen and (max-width: 540px) {
@@ -104,23 +167,35 @@ div {
     }
 }
 
+main {
+    display: flex;
+    width: 75rem;
+    height: 75rem;
+    position: relative;
+    float: right;
+}
 
 .box_img {
     display: flex;
+    position: relative;
     flex-wrap: wrap;
     justify-content: center;
-    float: right;
-    width: 90%;
-    background-color: aqua;
     
 }
 
 .img_box {
     display: inline;
     flex-basis: 100%;
+    float: left;
     width: 30rem;
     height: 30rem;
     box-sizing: border-box;
+    border-radius: var(--bordrad);
+    margin: 1rem 1rem  1rem 1rem;
+}
+
+.img_box img {
+    border-radius: var(--bordrad);
 }
 
 @media only screen and (min-width: 400px) { 
