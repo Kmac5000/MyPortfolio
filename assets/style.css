@@ -83,7 +83,7 @@ aside {
     display: flex 2;
     position: absolute;
     width: 25rem;
-    height: 115rem;
+    height: 123rem;
     background-color: var(--bgcolor2);
     float: left;
 }
@@ -123,7 +123,7 @@ aside .navbar a {
     justify-content: center;
     text-decoration: none;
     color: black;
-    font: 4rem var(--fontfam);
+    font: 3rem var(--fontfam);
 }
 
 
@@ -132,16 +132,25 @@ aside .navbar a {
     display: flex;
     position: relative;
     float: right;
-    justify-content: center;
-    margin: 3em 10em;
+    margin-left: 5rem;
+    margin-top: 5rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
     height: 40rem;
     width: auto;
-    background-color: blueviolet;
-    padding: 20px;
-    box-sizing: border-box;
-    border-radius: var(--bordrad);
+    color: aliceblue;
+    text-align: center;
+    font-size: 4rem;
 
 }
+
+.droplabel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}   
+
 
 .dropkick img {
     border-radius: var(--bordrad);
@@ -185,13 +194,22 @@ main {
 
 .img_box {
     display: inline;
-    flex-basis: 100%;
+    /* flex-basis: 100%; */
     float: left;
     width: 30rem;
     height: 30rem;
     box-sizing: border-box;
     border-radius: var(--bordrad);
     margin: 1rem 1rem  1rem 1rem;
+}
+
+
+.img_box span {
+    position: relative;
+    right: 10px;
+    top: 10px;
+    
+
 }
 
 .img_box img {
@@ -215,7 +233,7 @@ footer h3{
     position: relative;
     justify-content: center;
     align-items: center;
-    font-size: medium;
+    font-size: large;
     bottom: 0;
     height: 10rem;
     width: 100%;
