@@ -69,25 +69,22 @@ header .face {
     border-radius: 100%;
     margin-top: 1rem;
     margin-right: 9rem;
-    @media screen and (max-width: 500px) {
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: none;
-        
-    }
 }
 
 @media screen and (max-width: 500px) {
+   
+   
+   
     header .face {
         position: absolute;
-        top: 7rem;
-        left: 2rem;
+        top: 12rem;
+        left: 5rem;
+        margin: 0;
         
     }
 
     header .email {
-        top: 5rem;
+        top: 10rem;
         left:2rem;
     }
 }
@@ -124,6 +121,8 @@ aside {
 @media only screen and (max-width: 500px) {
     aside {
         background-color: var(--bgcolor3);
+        top: 30rem;
+        left:1rem;
     }
     
 }
@@ -182,11 +181,8 @@ aside .navbar a {
     color: aliceblue;
     text-align: center;
     font-size: 4rem;
-    @media screen and (max-width: 500px) {
-        flex-basis: 25%
-        
-        
-    }
+    border: 5px solid black;
+   
 }
 
 .dropkick .droplabel {
@@ -209,20 +205,23 @@ aside .navbar a {
     
     .dropkick {
         position: absolute;
-        top: 60rem;
-        right:20rem;
-        flex-direction: column;
-        flex-basis: 10%;
-        height: 1rem;
-        width: 2rem; 
+        top: 87rem;
+        left: 0; 
+        margin: 0;
+        height: 15rem;
+        width: auto; 
     }
     .dropkick .droplabel{
         position: absolute;
-        top: 20rem;
-        left: 5rem;
-        height: 1rem;
-        width: 1rem;
-
+        top: 4rem;
+        left: 3rem;
+        height: 5rem;
+        width: 10rem;
+        font-size: small;
+    }
+    .dropkick .droppic {
+        height: 15rem;
+        width: 25rem;
     }
    
 
@@ -247,8 +246,11 @@ main {
 @media  screen and (max-width: 500px) {
         main {
             position: absolute;
-            top: 85rem;
-            right: 25rem;
+            flex-direction: column;
+            top: 110rem;
+            left: 0rem;
+            width: 15rem;
+            height: 75rem;
             
         }
     
@@ -266,6 +268,33 @@ main {
     width: 30rem;
 }
 
+@media screen and (max-width: 500px) {
+    
+    main #pumpkin {
+        position: relative;
+        top: 0;
+        height: 15rem;
+        width: 15rem;
+    }
+    main #boo {
+        position: relative;
+        top: 0rem;
+        height: 15rem;
+        width: 15rem;
+    }
+    main #watch {
+        position: relative;
+        top: 0rem;
+        height: 15rem;
+        width: 15rem;
+    }
+    main #contact{
+        position: relative;
+        top: 0rem;
+        height: 15rem;
+        width: 15rem;
+    }
+}    
 .pumpkin1 {
     display: flex;
     position: absolute;
@@ -277,6 +306,13 @@ main {
     background-color: black;
     border-radius: 3%;
     z-index: 3;
+}
+
+@media screen and (max-width: 500px) {
+    main .pumpkin1 {
+        top: 2rem;
+    }
+    
 }
 
 #watch {
@@ -312,7 +348,6 @@ main {
     right: 0;
     height: 30rem;
     width: 30rem;
-     
 }
 
 .boo {
@@ -329,6 +364,15 @@ main {
     background-color: black;
     border-radius: 3%;
     z-index: 3;
+}
+
+@media screen and (min-width: 500px) {
+    .boo {
+        position: absolute;
+        top: 8rem;
+        left: 0rem;
+    }
+    
 }
 
 
@@ -379,7 +423,8 @@ main {
 
 footer h3{
     display: flex;
-    position: relative;
+    position: absolute;
+    bottom:0;
     justify-content: center;
     align-items: center;
     font-size: large;
@@ -390,10 +435,10 @@ footer h3{
     
 }
 
-@media only screen and (max-width: 700px) {
+/* @media only screen and (max-width: 500px) {
     footer { 
         display: none;
-} 
+}  */
 
 
 
