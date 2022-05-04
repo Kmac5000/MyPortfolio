@@ -3,12 +3,21 @@
     background-color: grey;
 }
 
+@media  screen and (max-width: 500px) {
+    * {
+        background-color: var(--bgcolor3);
+    }
+    
+}
+
 :root {
     --bgcolor2: darkred;
     --fontfam: 'Tapestry',
     cursive;
     --fontcol: black;
-    --bordrad: 12%
+    --bordrad: 12%;
+    --bgcolor3: white;
+    --phone:500px;
 }
 
 header {
@@ -20,6 +29,13 @@ header {
     height: 15rem;
     width: auto;
     background-color: var(--bgcolor2);
+    @media screen and (max-width: 500px){
+        flex-basis: 40%;
+        position: absolute;
+        top: 0;
+        left: 2rem;
+        
+    }
 }
 
 
@@ -29,22 +45,20 @@ header h1{
     text-align: center;
     font-size: 10rem;
     background-color: var(--bgcolor2 ); 
-    font-family: var(--fontfam)
+    font-family: var(--fontfam);
 }
 
 header .email {
     display: flex;
+    position: absolute;
+    top: 10rem;
+    left: 55rem;
     height: fit-content;
-    width: 70rem;
-    justify-content: right;
-    text-align: center;
+    width: fit-content;
     font-family: var(--fontfam);
     font-size: 2rem;
     text-decoration: none;
     color: var(--fontcol);
-    
-
-
 }
 
 header .face {
@@ -55,18 +69,35 @@ header .face {
     border-radius: 100%;
     margin-top: 1rem;
     margin-right: 9rem;
+    @media screen and (max-width: 500px) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header .face {
+        position: absolute;
+        top: 7rem;
+        left: 2rem;
+        
+    }
+
+    header .email {
+        top: 5rem;
+        left:2rem;
+    }
 }
 
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
     header {
         height: 10rem;
         width: 100%;
-    }
-
-    .face {
-        float: none;
     }
 
 
@@ -82,16 +113,18 @@ header .face {
 aside {
     display: flex 2;
     position: absolute;
+    top: 15rem;
+    left: 0rem;
     width: 25rem;
     height: 123rem;
     background-color: var(--bgcolor2);
     float: left;
 }
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 500px) {
     aside {
-        height: 25rem;
-    };
+        background-color: var(--bgcolor3);
+    }
     
 }
 
@@ -114,10 +147,18 @@ aside .navbar h2 {
 
 }
 
+@media screen and (max-width: 500px) {
+    aside .navbar h2 {
+        background-color: var(--bgcolor3);
+    }
+    
+}
+
 
 aside .navbar a {
     display: flex;
     position: relative;
+    float: right;
     height: 10rem;
     width: 25rem;
     justify-content: center;
@@ -141,88 +182,196 @@ aside .navbar a {
     color: aliceblue;
     text-align: center;
     font-size: 4rem;
-
+    @media screen and (max-width: 500px) {
+        flex-basis: 25%
+        
+        
+    }
 }
 
-.droplabel {
+.dropkick .droplabel {
+    display: flex;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}   
+    top: 2rem;
+    left: 10rem;
+    align-items: center;
+    height: 10rem;
+    width: 20rem;
+    font: 2rem sans-serif;
+    color: white;
+    background-color: darkgreen;
+    z-index: 2;
 
-
-.dropkick img {
-    border-radius: var(--bordrad);
 }
 
-@media only screen and (max-width: 540px) {
-    div {
-        height: 0rem;
-    }
-}
 
-@media only screen and (max-width: 700px) {
-    div {
-        margin:0%;
-        height: 15rem;
-    }
+@media only screen and (max-width: 500px) {
     
+    .dropkick {
+        position: absolute;
+        top: 60rem;
+        right:20rem;
+        flex-direction: column;
+        flex-basis: 10%;
+        height: 1rem;
+        width: 2rem; 
+    }
+    .dropkick .droplabel{
+        position: absolute;
+        top: 20rem;
+        left: 5rem;
+        height: 1rem;
+        width: 1rem;
+
+    }
+   
+
 }
 
-@media only screen and (max-width: 820px) {
-    div {
-        height: 20rem;
-    }
-}
+
+
+
 
 main {
     display: flex;
-    width: 75rem;
-    height: 75rem;
+    flex-wrap: wrap;
+    width: 60rem;
+    height: 60rem;
     position: relative;
     float: right;
+    border: 5px solid black;
+    margin-right: 17rem;
+      
 }
 
-.box_img {
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
-    justify-content: center;
+@media  screen and (max-width: 500px) {
+        main {
+            position: absolute;
+            top: 85rem;
+            right: 25rem;
+            
+        }
     
 }
 
-.img_box {
-    display: inline;
-    /* flex-basis: 100%; */
-    float: left;
-    width: 30rem;
+
+
+
+#pumpkin {
+    display: flex;  
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 30rem;
-    box-sizing: border-box;
-    border-radius: var(--bordrad);
-    margin: 1rem 1rem  1rem 1rem;
+    width: 30rem;
+}
+
+.pumpkin1 {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    height: 5rem;
+    width: 10rem;
+    font-size: 3rem;
+    color: white;
+    background-color: black;
+    border-radius: 3%;
+    z-index: 3;
+}
+
+#watch {
+    display: flex;
+    position:absolute;
+    top: 30rem;
+    left: 0;
+    height: 30rem;
+    width: 30rem;
+}
+
+.java {
+
+    display: flex;
+    position: absolute;
+    top: 35rem;
+    right: 45rem;
+    align-items: center;
+    height: 5rem;
+    width: 10rem;
+    font-size: 3rem;
+    color: white;
+    background-color: black;
+    border-radius: 3%;
+    z-index: 3;
+
+}
+
+#boo {
+    display: flex;
+    position:absolute;
+    top: 0;
+    right: 0;
+    height: 30rem;
+    width: 30rem;
+     
+}
+
+.boo {
+
+    display: flex;
+    position: absolute;
+    top: 20rem;
+    left: 50rem;
+    align-items: center;
+    height: 5rem;
+    width: 10rem;
+    font-size: 3rem;
+    color: white;
+    background-color: black;
+    border-radius: 3%;
+    z-index: 3;
 }
 
 
-.img_box span {
-    position: relative;
-    right: 10px;
-    top: 10px;
+#contact {
+    display: flex;
+    position:absolute;
+    top:30rem;
+    right: 0; 
+    height: 30rem;
+    width: 30rem;
     
-
 }
+
+.contact {
+
+    display: flex;
+    position: absolute;
+    top: 50rem;
+    right: 15rem;
+    align-items: center;
+    height: 5rem;
+    width: 10rem;
+    font-size: 3rem;
+    color: white;
+    background-color: black;
+    border-radius: 3%;
+    z-index: 3;
+}
+
+
 
 .img_box img {
     border-radius: var(--bordrad);
 }
 
-@media only screen and (min-width: 400px) { 
+@media only screen and (max-width: 500px) { 
     .img_box {
-    flex-basis: 25%;
+    flex-basis: 100%;
 }
 
-@media only screen and (min-width: 820px) {
+@media only screen and (max-width: 820px) {
     .img_box {
+        display: none;
         flex-basis: 50%
     }
 }
@@ -244,7 +393,7 @@ footer h3{
 @media only screen and (max-width: 700px) {
     footer { 
         display: none;
-}
+} 
 
 
 
