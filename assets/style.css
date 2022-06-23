@@ -72,7 +72,7 @@ header .face {
 }
 
 @media screen and (max-width: 500px) {
-   
+
    
    
     header .face {
@@ -206,10 +206,11 @@ aside .navbar a {
     
     .dropkick {
         position: absolute;
+        justify-content: center;
         top: 87rem;
         left: 0; 
         margin: 0;
-        height: 15rem;
+        height: 12rem;
         width: auto; 
     }
     .dropkick .droplabel{
@@ -221,8 +222,8 @@ aside .navbar a {
         font-size: small;
     }
     .dropkick .droppic {
-        height: 15rem;
-        width: 25rem;
+        height: 12rem;
+        width: 18rem;
     }
    
 
